@@ -32,7 +32,7 @@ export const PokedexDataReducer = (state = initialState, action) => {
                     ...state,
                     error: null,
                     pokemon_filter: state.pokemon_entries.filter((item) => {                        
-                        return item.pokemon_species.name.includes(action.payload.pkm)
+                        return item.pokemon_species.name.includes(action.payload.pkm.toLowerCase())
                     })
                 }
             }
