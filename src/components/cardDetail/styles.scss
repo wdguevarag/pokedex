@@ -1,0 +1,132 @@
+.cardDetail {
+    border: 3px solid #bdbdbd;
+    width: 85%;
+    height: 78vh;
+    margin-left: 5%;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0 2%;
+    @media (max-width: 640px) {
+        margin-top: 3%;
+        height: 30vh;
+        width: 90%;
+        margin-left: 2%;
+    }
+    &__content {
+        &-order {
+            text-align: right;
+            font-size: 18px;
+            font-weight: bold;
+            color: #6D6D6D;
+            border-bottom: 3px solid #bdbdbd;
+            @media (max-width: 640px) {
+                font-size: 14px;
+            }
+        }
+        &-name {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 2%;
+            &::first-letter {
+                text-transform: uppercase;
+            }
+            @media (max-width: 640px) {
+                font-size: 26px;
+                margin-bottom: 0.5%;
+            }
+        }
+        &-type {
+            span {
+                width: fit-content;
+                padding: 5px 25px;
+                border-radius: 10px;
+                background-color: #707070;
+                color: black;
+                font-weight: 600;
+                margin: 1%;
+                @media (max-width: 640px) {
+                    margin: 0.5%;
+                    padding: 2px 15px;
+                    font-size: 14px;
+                }
+                    &.fire {
+                        background-color: #fd7d24;
+                    }
+                    &.flying {
+                        background-color: #bdb9b8;
+                    }
+                    &.grass {
+                        background-color: #9bcc50;
+                    }
+                    &.poison {
+                        background-color: #b97fc9;
+                    }
+                    &.water {
+                        background-color: #4592c4;
+                    }
+                    &.bug {
+                        background-color: #729f3f
+                    }
+                    &.normal {
+                        background-color: #a4acaf;
+                    }
+                    &.electric {
+                        background-color: #eed535;
+                    }
+                    &.ground {
+                        background-color: #ab9842;
+                    }
+                    &.fairy {
+                        background-color: #fdb9e9;
+                    }
+                    &.fighting {
+                        background-color: #d56723;
+                    }
+                    &.psychic {
+                        background-color: #f366b9;
+                    }
+                    &.ghost {
+                        background-color: #7b62a3;
+                    }
+                    &.rock {
+                        background-color: #a38c21;
+                    }
+                    &.dragon {
+                        background-color: #f16e57;
+                    }
+            }
+        }
+        &-body {
+            margin-top: 3%;
+            background-color: #ECEFF1;
+            padding: 1%;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+            color: #607D8B;
+            @media (max-width: 640px) {
+                margin-top: 2%;
+                font-size: 14px;
+            }
+        }
+        &-img {
+            @media (max-width: 640px) {
+                img {
+                    height: 15vh;
+                }
+            }
+        }
+    }
+    &__default {        
+        &-img {
+            img {
+                margin-top: 20%;
+            }
+            @media (max-width: 640px) {
+                img {
+                    height: 15vh;
+                }
+            }
+        }
+    }
+}

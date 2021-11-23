@@ -1,0 +1,43 @@
+.cardItem {
+    border: 1px solid #E0E0E0;
+    
+    height: 150px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+        border: 1px solid orange;
+    }
+    &__content {
+        padding: 0% 5%;
+    }
+    &__image {
+        border-bottom: 1px solid #E0E0E0;
+        margin-bottom: 2%;
+    }
+    &__name {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        padding-top: 1%;
+        color: #212121;
+        span {
+            color: #607D8B;
+            text-align: right;
+        }
+        &::first-letter {
+            text-transform: uppercase;
+        }
+    }
+    &__number {
+        color: #607D8B;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: #ECEFF1;
+        width: fit-content;
+        padding: 0px 10px;
+        border-radius: 5px;
+        margin: auto;
+        margin-right: 0px;
+    }
+}
