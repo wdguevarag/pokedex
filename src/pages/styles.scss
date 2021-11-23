@@ -4,6 +4,9 @@
     padding: 0.5% 2%;
     margin-bottom: 1%;
     display: flex;
+    @media (max-width: 640px) {
+        margin-bottom: 2%;
+    }
     table {
         width: 100%;
     }
@@ -62,7 +65,7 @@
     max-height: 80vh;
     margin-top: 1% !important;
     @media (max-width: 640px) {
-        max-height: 47vh;
+        max-height: 40vh;
     }
 }
 

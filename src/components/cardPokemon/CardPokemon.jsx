@@ -3,14 +3,8 @@ import './styles.scss'
 
 import { getPokemon } from '../../store/actions/consumerPokeApi';
 import { Grid } from '@material-ui/core';
-import { useDispatch, useSelector } from "react-redux";
-import { isNullLiteralTypeAnnotation } from '@babel/types';
 
 function CardPokemon(props) {
-
-    //console.log('props=> ', props)
-    
-    const dispatch = useDispatch();
 
     const { entry_number, pokemon_species } = props.data;
     

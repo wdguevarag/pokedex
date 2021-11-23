@@ -1,7 +1,7 @@
 .cardItem {
     border: 1px solid #E0E0E0;
     
-    height: 150px;
+    height: 25vh;
     border-radius: 15px;
     text-align: center;
     cursor: pointer;
@@ -21,6 +21,9 @@
         text-align: left;
         padding-top: 1%;
         color: #212121;
+        @media (max-width: 640px) {
+            font-size: 18px;
+        }
         span {
             color: #607D8B;
             text-align: right;
@@ -39,5 +42,8 @@
         border-radius: 5px;
         margin: auto;
         margin-right: 0px;
+        @media (max-width: 640px) {
+            font-size: 18px;
+        }
     }
 }

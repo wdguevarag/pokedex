@@ -1,12 +1,9 @@
-import React, {useEffect, useState} from 'react';
 import './styles.scss'
 import { Grid } from '@material-ui/core';
 
 import imgCenter from '../../assets/images/bkg-pkm.png';
 
 function CardDetail(props) {
-
-    //console.log('detail=> ', props)
 
     const { artwork, name, types, order, height, weight } = props.data;
     

@@ -28,8 +28,6 @@ export const PokedexDataReducer = (state = initialState, action) => {
 
         case TYPES.searchPokemon:
             {
-                console.log('state=> ', state)
-                console.log('action=> ', action)
                 return {
                     ...state,
                     error: null,

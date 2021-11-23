@@ -14,15 +14,12 @@ function StartPage() {
 
     const dispatch = useDispatch();
     
-    const { pokemon_entries, pokemon_filter } = useSelector(state => state.pokedex)
-
-    //console.log('pokemon_entries=> ', pokemon_entries)
+    const { pokemon_filter } = useSelector(state => state.pokedex)
 
     const [pokedex, setpokedex] = useState(2)
     
     useEffect(() => {
         dispatch(getAllPokemons(pokedex));
-        console.log('useEffect All Pokes')
     }, [pokedex])
 
     const changePokedex = (id) => {
@@ -66,18 +63,14 @@ function StartPage() {
 
     useEffect(() => {
         dispatch(getPokemonByName(searchByName));
-        console.log('useEffect search pkm')
     }, [searchByName])
 
 
     const handleInputChange = (event) => {
-        console.log('find=> ', searchByName)
-
         setFromValues({
             ...fromValues,
             [event.target.name]: event.target.value
         })
-
     }
 
     return(
