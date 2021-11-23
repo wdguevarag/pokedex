@@ -5,7 +5,7 @@ import imgCenter from '../../assets/images/bkg-pkm.png';
 
 function CardDetail(props) {
 
-    const { artwork, name, types, order, height, weight } = props.data;
+    const { artwork, name, types, order, height, weight, stats } = props.data;
     
     return (
         <>
@@ -36,6 +36,18 @@ function CardDetail(props) {
                     <Grid item xs={6}>
                         <div className=''>Weight: { weight/10 } kg.</div>
                     </Grid>
+                </Grid>
+                <Grid container className='cardDetail__content-stats' spacing={1}>
+                    {
+                        stats ? stats.map ((s) => {
+                            return (
+                                <Grid item xs={5}>
+                                    <div className=''><span className='valueStat'>{ s.base_stat }</span> {s.stat.name} </div>
+                                </Grid>
+                            )
+                        }) : ''
+                    }
+                    
                 </Grid>
             </div> :
             <div className='cardDetail'>

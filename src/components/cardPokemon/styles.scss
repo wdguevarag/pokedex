@@ -1,7 +1,7 @@
 .cardItem {
     border: 1px solid #E0E0E0;
-    
-    height: 25vh;
+    padding-bottom: 3%;
+    height: fit-content;
     border-radius: 15px;
     text-align: center;
     cursor: pointer;
@@ -44,6 +44,21 @@
         margin-right: 0px;
         @media (max-width: 640px) {
             font-size: 18px;
+        }
+    }
+    &__stat {
+        margin-top: 5%;
+        color: #263238;
+        font-size: 14px;
+        &.left {
+            text-align: left;
+        }
+        &.right {
+            text-align: right;
+        }
+        img {
+            width: 13px;
+            height: 13px;
         }
     }
 }

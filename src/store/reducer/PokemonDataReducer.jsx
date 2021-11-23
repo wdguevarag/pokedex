@@ -20,7 +20,8 @@ export const PokemonDataReducer = (state = initialState, action) => {
                 artwork: action.payload.data.sprites.other["official-artwork"].front_default,
                 order: action.payload.data.order,
                 weight: action.payload.data.weight,
-                height: action.payload.data.height
+                height: action.payload.data.height,
+                stats: action.payload.data.stats
         }
 
         case TYPES.pokemonError:

@@ -26,8 +26,6 @@ function StartPage() {
         setpokedex(id);
     }
 
-    //const [pokemonSelected, setpokemonSelected] = useState(null);
-
     const pokemonSelected = useSelector(state => state.pokemon);
 
     const basePokedex = [
