@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/pokedex/static/css/main.a04a255d.chunk.css",
+    "main.js": "/pokedex/static/js/main.d14734e5.chunk.js",
+    "main.js.map": "/pokedex/static/js/main.d14734e5.chunk.js.map",
+    "runtime-main.js": "/pokedex/static/js/runtime-main.b1ae1a10.js",
+    "runtime-main.js.map": "/pokedex/static/js/runtime-main.b1ae1a10.js.map",
+    "static/css/2.2d35c647.chunk.css": "/pokedex/static/css/2.2d35c647.chunk.css",
+    "static/js/2.b1678238.chunk.js": "/pokedex/static/js/2.b1678238.chunk.js",
+    "static/js/2.b1678238.chunk.js.map": "/pokedex/static/js/2.b1678238.chunk.js.map",
+    "static/js/3.c713dbf2.chunk.js": "/pokedex/static/js/3.c713dbf2.chunk.js",
+    "static/js/3.c713dbf2.chunk.js.map": "/pokedex/static/js/3.c713dbf2.chunk.js.map",
+    "index.html": "/pokedex/index.html",
+    "static/css/2.2d35c647.chunk.css.map": "/pokedex/static/css/2.2d35c647.chunk.css.map",
+    "static/css/main.a04a255d.chunk.css.map": "/pokedex/static/css/main.a04a255d.chunk.css.map",
+    "static/js/2.b1678238.chunk.js.LICENSE.txt": "/pokedex/static/js/2.b1678238.chunk.js.LICENSE.txt",
+    "static/media/bkg-pkm.21d437e1.png": "/pokedex/static/media/bkg-pkm.21d437e1.png",
+    "static/media/index.css": "/pokedex/static/media/roboto-vietnamese-400-normal.c0bec65d.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b1ae1a10.js",
+    "static/css/2.2d35c647.chunk.css",
+    "static/js/2.b1678238.chunk.js",
+    "static/css/main.a04a255d.chunk.css",
+    "static/js/main.d14734e5.chunk.js"
+  ]
+}
