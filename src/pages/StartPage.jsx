@@ -24,6 +24,7 @@ function StartPage() {
 
     const changePokedex = (id) => {
         setpokedex(id);
+        handleInputChange(null)
     }
 
     const pokemonSelected = useSelector(state => state.pokemon);
@@ -50,7 +51,6 @@ function StartPage() {
 
     const cardSelected = (id) => {
         dispatch(getPokemonDetail(id));
-      //  setpokemonSelected(useSelector(state => state.pokemon))
     }
 
     const [fromValues, setFromValues] = useState({
@@ -65,6 +65,12 @@ function StartPage() {
 
 
     const handleInputChange = (event) => {
+        if (!event) 
+            setFromValues({
+                ...fromValues,
+                searchByName: ''
+            })
+        else 
         setFromValues({
             ...fromValues,
             [event.target.name]: event.target.value
@@ -96,15 +102,17 @@ function StartPage() {
                 <Grid container justifyContent='center'>
                 
                 <Grid item md={7} xs={12}>
-                    <TextField
-                        id="searchByName"
-                        name="searchByName"
-                        value={searchByName}
-                        label="Nombre de pokemon"
-                        variant="outlined"
-                        fullWidth
-                        onChange={handleInputChange}
-                    />
+                    <div className="textField__content">
+                        <TextField
+                            id="searchByName"
+                            name="searchByName"
+                            value={searchByName}
+                            label="Pokemon name"
+                            variant="outlined"
+                            fullWidth
+                            onChange={handleInputChange}
+                        />
+                    </div>
 
                 </Grid>
                 <Grid md={5} xs={12} justifyContent="center" container alignItems="center">

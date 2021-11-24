@@ -32,6 +32,14 @@
 
 .main-body{
     padding: 1%;
+    .textField {
+        &__content {
+            padding-left: 1%;
+            @media (max-width: 640px) {
+                padding: 0 2%;
+            }
+        }
+    }
 }
 
 .section-pkms {
